@@ -1,0 +1,1585 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ascend Academy offers concept-first Physics and Chemistry coaching for Cambridge and Edexcel Pre-O Level, O Level and A Level students in Lalmatia, Dhaka.">
+<title>Ascend Academy — Rise Through Knowledge</title>
+<meta name="theme-color" content="#071b32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #071b32;
+  --navy2: #123e68;
+  --navy-dark: #041224;
+  --gold: #f4c95d;
+  --gold-dark: #b8860b;
+  --gold-soft: #fff6db;
+  --cream: #fbfaf6;
+  --cream-dark: #f2efe7;
+  --ink: #071b32;
+  --body-ink: #223c58;
+  --muted: #4f667e;
+  --muted-dark: #374e66;
+  --line: #dbe3eb;
+  --line-strong: #c2d1e0;
+  --teal: #0b9a83;
+  --teal-light: #d8f3ee;
+  --white: #ffffff;
+  --shadow-sm: 0 4px 15px rgba(7, 27, 50, 0.06);
+  --shadow: 0 20px 60px rgba(7, 27, 50, 0.12);
+  --shadow-lg: 0 30px 80px rgba(7, 27, 50, 0.18);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #fcfbf8 0%, #f6f8fa 50%, #fbfaf7 100%);
+  color: var(--body-ink);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #f6d888;
+  color: #071b32;
+}
+
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.wrap {
+  width: min(1180px, calc(100% - 44px));
+  margin: auto;
+}
+
+/* Announcement Bar */
+.announcement {
+  background: var(--navy);
+  color: #ffffff;
+  text-align: center;
+  padding: 11px 16px;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+}
+.announcement span {
+  color: var(--gold);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+/* Header & Navigation */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(251, 250, 246, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1.5px solid rgba(7, 27, 50, 0.09);
+  box-shadow: 0 4px 20px rgba(7, 27, 50, 0.04);
+}
+.navin {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  color: var(--navy);
+}
+.brandmark {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(145deg, #103357, #06182c);
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+  box-shadow: 0 6px 18px rgba(7, 27, 50, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.brand:hover .brandmark {
+  transform: translateY(-2px) rotate(-3deg);
+  box-shadow: 0 10px 24px rgba(7, 27, 50, 0.28);
+}
+.brand small {
+  display: block;
+  font-size: 9.5px;
+  letter-spacing: 0.28em;
+  color: #5c748e;
+  font-weight: 850;
+  margin-top: -2px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 14.5px;
+  font-weight: 750;
+  color: #213c58;
+}
+.links a {
+  position: relative;
+  transition: color 0.2s ease;
+}
+.links a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2.5px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: width 0.25s ease;
+}
+.links a:hover {
+  color: var(--navy);
+}
+.links a:hover:after {
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 24px;
+  font-weight: 800;
+  font-size: 14.5px;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+.btn:hover {
+  transform: translateY(-2.5px);
+}
+.btn-primary {
+  background: linear-gradient(135deg, #0e3052, #06182c);
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(7, 27, 50, 0.22);
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #14406d, #09223e);
+  box-shadow: 0 14px 32px rgba(7, 27, 50, 0.32);
+}
+.btn-gold {
+  background: linear-gradient(135deg, #fcd36a, #e5b341);
+  color: #071b32;
+  font-weight: 850;
+  box-shadow: 0 8px 22px rgba(181, 138, 59, 0.26);
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #ffe085, #f0be4d);
+  box-shadow: 0 12px 28px rgba(181, 138, 59, 0.38);
+}
+.btn-outline {
+  border: 1.8px solid var(--line-strong);
+  color: var(--navy);
+  background: #ffffff90;
+  font-weight: 800;
+}
+.btn-outline:hover {
+  background: #ffffff;
+  border-color: var(--navy2);
+  box-shadow: 0 6px 18px rgba(7, 27, 50, 0.1);
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--navy);
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  padding: 82px 0 76px;
+  overflow: hidden;
+  position: relative;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  right: -130px;
+  top: -130px;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e0eff8 0, rgba(224, 239, 248, 0) 70%);
+  z-index: -1;
+}
+.hero:after {
+  content: "";
+  position: absolute;
+  left: -180px;
+  bottom: -220px;
+  width: 450px;
+  height: 450px;
+  border: 1px solid #d4e3ee;
+  border-radius: 50%;
+  box-shadow: 0 0 0 35px rgba(212, 227, 238, 0.3), 0 0 0 75px rgba(212, 227, 238, 0.18);
+  pointer-events: none;
+  z-index: -1;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 56px;
+  align-items: center;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1.5px solid #ebd8a7;
+  background: #fffdf5;
+  color: #7b5806;
+  border-radius: 999px;
+  padding: 8px 15px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 850;
+  box-shadow: 0 3px 10px rgba(123, 88, 6, 0.06);
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #0b9a83;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(11, 154, 131, 0.2);
+}
+.hero h1 {
+  font-size: clamp(46px, 5.6vw, 74px);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  font-weight: 900;
+  margin: 22px 0 20px;
+  color: var(--navy);
+  max-width: 680px;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(110deg, #b0811c 0%, #d89f24 45%, #b27b05 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  white-space: nowrap;
+}
+.hero p {
+  font-size: 18px;
+  font-weight: 550;
+  max-width: 580px;
+  color: #2b4560;
+  line-height: 1.75;
+  margin: 0 0 30px;
+}
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.trustline {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  color: #203c58;
+  font-size: 13.5px;
+  font-weight: 750;
+}
+.trustline span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.check {
+  color: #088b75;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+/* Portrait & Visual Elements */
+.portrait-area {
+  position: relative;
+  min-height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portrait-halo {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at 35% 30%, #e6f2f8, #cae3f0 72%);
+  border-radius: 50%;
+  right: 10px;
+  top: 35px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+.portrait-frame {
+  position: relative;
+  width: min(100%, 420px);
+  height: 470px;
+  border-radius: 48% 48% 32px 32px;
+  overflow: hidden;
+  border: 8px solid #ffffff;
+  box-shadow: var(--shadow-lg);
+  background: #dceaf0;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.portrait-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 36px 95px rgba(7, 27, 50, 0.24);
+}
+.portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 8%;
+}
+.floating-card {
+  position: absolute;
+  left: -14px;
+  bottom: 36px;
+  background: #ffffff;
+  border: 1.5px solid #e1e9f0;
+  border-radius: 18px;
+  padding: 16px 20px;
+  box-shadow: var(--shadow);
+  max-width: 230px;
+  animation: floatCard 5s ease-in-out infinite;
+}
+.floating-card b {
+  display: block;
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 850;
+  margin-top: 2px;
+}
+.floating-card small {
+  color: var(--muted-dark);
+  font-size: 12.5px;
+  font-weight: 650;
+  display: block;
+  margin-top: 2px;
+}
+.floating-card .stars {
+  color: #bd8908;
+  letter-spacing: 3px;
+  font-weight: 900;
+  font-size: 13px;
+}
+.science-doodle {
+  position: absolute;
+  right: -6px;
+  top: 10px;
+  width: 84px;
+  height: 84px;
+  border: 1.5px dashed #8fb8d0;
+  border-radius: 26px;
+  display: grid;
+  place-items: center;
+  font-size: 42px;
+  color: #124d73;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(7, 27, 50, 0.08);
+  transform: rotate(10deg);
+  animation: floatCard 6s ease-in-out infinite reverse;
+}
+
+/* Quick Strip */
+.strip {
+  background: linear-gradient(110deg, #06182c, #0d3254);
+  color: #ffffff;
+  padding: 24px 0;
+  box-shadow: 0 15px 40px rgba(7, 27, 50, 0.12);
+}
+.stripin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.strip strong {
+  font-size: 14.5px;
+  font-weight: 850;
+  letter-spacing: 0.01em;
+}
+.strip small {
+  display: block;
+  color: #b0c9de;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.strip .sep {
+  height: 36px;
+  width: 1.5px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Sections */
+.section {
+  padding: 96px 0;
+}
+.section-head {
+  max-width: 700px;
+  margin-bottom: 42px;
+}
+.kicker {
+  color: #ad7d07;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.section h2 {
+  font-size: clamp(34px, 4.4vw, 50px);
+  letter-spacing: -0.04em;
+  line-height: 1.14;
+  font-weight: 850;
+  color: var(--navy);
+  margin: 12px 0 16px;
+}
+.section-head p {
+  color: #354e68;
+  font-size: 17px;
+  font-weight: 550;
+  line-height: 1.72;
+  max-width: 640px;
+}
+
+/* Courses Cards */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.course {
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  border-radius: 26px;
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.course:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow);
+  border-color: #d6b86d;
+}
+.course-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 24px;
+  transition: transform 0.35s cubic-bezier(0.2, 0.75, 0.25, 1), box-shadow 0.35s ease;
+  box-shadow: 0 10px 24px rgba(7, 27, 50, 0.12);
+}
+.course-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 18px;
+}
+.course:hover .course-icon {
+  transform: scale(1.1) rotate(4deg);
+  box-shadow: 0 14px 32px rgba(7, 27, 50, 0.22);
+}
+.course-icon-pre {
+  background: linear-gradient(135deg, #1b4666, #071b32);
+}
+.course-icon-o {
+  background: linear-gradient(135deg, #092b4c, #031526);
+}
+.course-icon-a {
+  background: linear-gradient(135deg, #1e1848, #071b32);
+}
+.course h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 850;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+.course p {
+  font-size: 15px;
+  font-weight: 550;
+  color: #364f69;
+  line-height: 1.68;
+  margin: 0 0 18px;
+  flex-grow: 1;
+}
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 24px;
+}
+.tag {
+  font-size: 12px;
+  font-weight: 800;
+  background: #edf3f8;
+  padding: 6px 11px;
+  border-radius: 999px;
+  color: #123354;
+  border: 1px solid #dbe6ef;
+}
+.textlink {
+  font-size: 14.5px;
+  color: var(--navy);
+  font-weight: 850;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 3px;
+  align-self: flex-start;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.textlink:hover {
+  color: var(--navy2);
+  border-color: var(--navy);
+}
+
+/* Delivery Formats */
+.delivery {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.delivery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.delivery-card {
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  border-radius: 26px;
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.delivery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+  border-color: #d6b86d;
+}
+.delivery-card.online {
+  background: linear-gradient(180deg, #f7fcfe 0%, #edf6fb 100%);
+  border-color: #c7deed;
+}
+.delivery-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  transition: transform 0.35s cubic-bezier(0.2, 0.75, 0.25, 1), box-shadow 0.35s ease;
+  box-shadow: 0 10px 24px rgba(7, 27, 50, 0.12);
+}
+.delivery-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 18px;
+}
+.delivery-card:hover .delivery-icon {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 14px 30px rgba(7, 27, 50, 0.22);
+}
+.delivery-card h3 {
+  font-size: 23px;
+  font-weight: 850;
+  color: var(--navy);
+  margin: 10px 0 10px;
+  letter-spacing: -0.02em;
+}
+.delivery-card p {
+  font-size: 15.5px;
+  font-weight: 550;
+  color: #354e68;
+  line-height: 1.7;
+  margin: 0 0 16px;
+  min-height: 60px;
+}
+.delivery-card>strong {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+/* Ascend Approach */
+.approach {
+  background: #f0f5f7;
+}
+.approach-grid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 60px;
+  align-items: center;
+}
+.quote-card {
+  background: linear-gradient(145deg, #092b4c, #041426);
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 38px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.quote-card:after {
+  content: "∿";
+  font-size: 190px;
+  position: absolute;
+  right: 10px;
+  bottom: -110px;
+  color: rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+.quote-card .qmark {
+  font-size: 46px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+}
+.quote-card h3 {
+  font-size: 27px;
+  font-weight: 850;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 14px 0 16px;
+  color: #ffffff;
+}
+.quote-card p {
+  color: #c9daf0;
+  font-size: 15px;
+  font-weight: 550;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.feature {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: transform 0.25s ease;
+}
+.feature:hover {
+  transform: translateX(3px);
+}
+.feature-icon {
+  flex: 0 0 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: none;
+  box-shadow: 0 8px 20px rgba(7, 27, 50, 0.09);
+  transition: transform 0.3s cubic-bezier(0.2, 0.75, 0.25, 1), box-shadow 0.3s ease;
+}
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 16px;
+}
+.feature:hover .feature-icon {
+  transform: scale(1.12) rotate(4deg);
+  box-shadow: 0 12px 26px rgba(7, 27, 50, 0.2);
+}
+.feature h3 {
+  font-size: 16.5px;
+  font-weight: 850;
+  margin: 0 0 5px;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+}
+.feature p {
+  font-size: 14px;
+  font-weight: 550;
+  color: #38516b;
+  line-height: 1.62;
+  margin: 0;
+}
+
+/* Instructor Section */
+.teacher-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 58px;
+  align-items: center;
+}
+.teacher-photo {
+  height: 410px;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #dceaf0;
+  border: 8px solid #ffffff;
+  box-shadow: var(--shadow-lg);
+}
+.teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 6%;
+}
+.teacher-copy h2 {
+  margin-top: 12px;
+}
+.teacher-copy p {
+  color: #2e4761;
+  font-size: 16px;
+  font-weight: 550;
+  line-height: 1.76;
+  margin: 0 0 16px;
+}
+.teacher-pills {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin: 24px 0 28px;
+}
+.teacher-pills span {
+  background: #ffffff;
+  border: 1.5px solid var(--line-strong);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--navy);
+  box-shadow: 0 2px 8px rgba(7, 27, 50, 0.04);
+}
+
+/* CTA Banner */
+.cta {
+  padding: 0 0 96px;
+}
+.cta-panel {
+  background: linear-gradient(135deg, #092b4c 0%, #031426 100%);
+  color: #ffffff;
+  border-radius: 32px;
+  padding: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.cta-panel:after {
+  content: "";
+  position: absolute;
+  right: 18%;
+  top: -140px;
+  width: 320px;
+  height: 320px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  box-shadow: 0 0 0 35px rgba(255, 255, 255, 0.06), 0 0 0 75px rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+}
+.cta-panel h2 {
+  color: #ffffff;
+  font-size: clamp(30px, 3.6vw, 42px);
+  font-weight: 900;
+  margin: 0 0 12px;
+  max-width: 600px;
+  letter-spacing: -0.03em;
+}
+.cta-panel p {
+  color: #d1e2f3;
+  font-size: 16.5px;
+  font-weight: 550;
+  margin: 0;
+}
+
+/* FAQ Section */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 54px;
+}
+.faq-list details {
+  border-bottom: 1.5px solid var(--line);
+  padding: 20px 0;
+}
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 850;
+  color: var(--navy);
+  font-size: 17px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  letter-spacing: -0.015em;
+  transition: color 0.2s ease;
+}
+.faq-list summary:hover {
+  color: var(--navy2);
+}
+.faq-list summary:after {
+  content: "+";
+  color: #ad7d07;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+.faq-list details[open] summary:after {
+  content: "−";
+}
+.faq-list p {
+  font-size: 15.5px;
+  font-weight: 550;
+  color: #354e68;
+  line-height: 1.72;
+  margin: 12px 0 0;
+}
+
+/* Contact & Booking */
+.contact {
+  background: #f0f5f7;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 58px;
+}
+.contact-items {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+.contact-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.contact-item .ci {
+  width: 46px;
+  height: 46px;
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(7, 27, 50, 0.05);
+}
+.contact-item b {
+  display: block;
+  font-size: 15px;
+  font-weight: 850;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+}
+.contact-item small {
+  font-size: 13.5px;
+  font-weight: 650;
+  color: #3b536e;
+}
+
+/* Form Card */
+.form-card {
+  background: #ffffff;
+  padding: 34px;
+  border-radius: 26px;
+  border: 1.5px solid var(--line);
+  box-shadow: 0 16px 45px rgba(7, 27, 50, 0.08);
+}
+.form-card h3 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  font-weight: 850;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+.form-card>p {
+  font-size: 14.5px;
+  font-weight: 550;
+  color: #435c75;
+  margin: 0 0 20px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.field {
+  display: grid;
+  gap: 7px;
+}
+.field.full {
+  grid-column: 1 / -1;
+}
+.field label {
+  font-size: 13px;
+  font-weight: 850;
+  color: #132e4d;
+  letter-spacing: -0.01em;
+}
+.field input, .field select, .field textarea {
+  width: 100%;
+  border: 1.5px solid #d5dfe8;
+  border-radius: 12px;
+  padding: 13px 15px;
+  background: #ffffff;
+  outline: none;
+  color: var(--ink);
+  font-size: 14.5px;
+  font-weight: 600;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  border-color: #6a9cc2;
+  box-shadow: 0 0 0 3.5px rgba(106, 156, 194, 0.25);
+}
+.notice {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #556c82;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  background: #051a30;
+  color: #ffffff;
+  padding: 52px 0 28px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 34px;
+}
+.footer p {
+  font-size: 14.5px;
+  font-weight: 550;
+  color: #b1c7da;
+  max-width: 360px;
+  line-height: 1.75;
+  margin-top: 14px;
+}
+.footer-links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  color: #dbe7f2;
+  font-size: 14px;
+  font-weight: 750;
+}
+.footer-links a:hover {
+  color: var(--gold);
+}
+.copyright {
+  border-top: 1.5px solid rgba(255, 255, 255, 0.12);
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  font-weight: 650;
+  color: #92acca;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 18, 36, 0.85);
+  z-index: 999;
+  display: none;
+  place-items: center;
+  padding: 20px;
+}
+.modal.open {
+  display: grid;
+}
+.modal-box {
+  background: var(--cream);
+  border-radius: 26px;
+  padding: 34px;
+  width: min(500px, 100%);
+  position: relative;
+  max-height: 90vh;
+  overflow: auto;
+}
+.modal-close {
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  border: 0;
+  background: none;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  color: var(--navy);
+}
+
+/* Mobile Nav */
+.mobile-nav {
+  display: none;
+}
+
+/* Responsive & Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@media(max-width:850px) {
+  .delivery-grid, .courses, .features, .form-grid { grid-template-columns: 1fr; }
+  .links { display: none; }
+  .menu { display: block; }
+  .mobile-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 82px;
+    background: var(--cream);
+    padding: 20px 24px 26px;
+    border-bottom: 1.5px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+  .mobile-nav.open { display: grid; gap: 16px; }
+  .hero { padding: 54px 0 60px; }
+  .hero-grid, .approach-grid, .teacher-grid, .faq-grid, .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .portrait-area { min-height: 440px; }
+  .portrait-frame { height: 410px; width: min(88%, 380px); }
+  .portrait-halo { width: 320px; height: 320px; right: 5%; }
+  .floating-card { left: 0; bottom: 20px; }
+  .course p { min-height: 0; }
+  .section { padding: 74px 0; }
+  .teacher-photo { height: 380px; max-width: 440px; }
+  .cta-panel { padding: 36px; align-items: flex-start; flex-direction: column; }
+  .stripin { justify-content: center; }
+  .strip .sep { display: none; }
+  .field.full { grid-column: auto; }
+}
+
+@media(max-width:480px) {
+  .wrap { width: min(100% - 30px, 1180px); }
+  .navin { height: 70px; }
+  .mobile-nav { top: 70px; }
+  .brandmark { width: 40px; height: 40px; }
+  .hero h1 { font-size: 44px; }
+  .hero p { font-size: 16px; }
+  .portrait-area { min-height: 375px; }
+  .portrait-frame { height: 350px; }
+  .portrait-halo { width: 270px; height: 270px; top: 35px; }
+  .science-doodle { right: 0; top: 0; width: 64px; height: 64px; font-size: 32px; }
+  .floating-card { max-width: 200px; padding: 14px; }
+  .cta-panel { padding: 28px; }
+  .section { padding: 60px 0; }
+  .strip strong { font-size: 12.5px; }
+  .form-card { padding: 22px; }
+</style>
+</head>
+<body>
+<div class="announcement"><span>ADMISSIONS OPEN</span> &nbsp; Physics & Chemistry coaching · Lalmatia & Online · <a href="tel:01795683809" style="color:var(--gold);font-weight:800;text-decoration:underline;">📞 01795683809</a></div>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="#home" aria-label="Ascend Academy home"><span class="brandmark" aria-hidden="true"><svg viewBox="0 0 48 48" role="img"><path d="M7 36.5 21.4 9.5c.8-1.5 2.8-1.5 3.6 0l14 27" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.4 29.5h17.2M24 29.5l7.3-8.2" fill="none" stroke="#F4C95D" stroke-width="3.4" stroke-linecap="round"/><circle cx="36.7" cy="15" r="3" fill="#F4C95D"/></svg></span><span>ASCEND<small>ACADEMY</small></span></a>
+<nav class="links"><a href="#courses">Courses</a><a href="#delivery">Class Formats</a><a href="#approach">Our Approach</a><a href="#instructor">Instructor</a><a href="#faq">FAQs</a><a href="#contact">Contact</a></nav>
+<div style="display:flex;align-items:center;gap:10px;">
+  <a class="btn btn-outline" href="tel:01795683809" style="padding:11px 18px;font-size:13.5px;font-weight:800;" title="Call Us Directly">📞 01795683809</a>
+  <a class="btn btn-primary nav-cta" href="#contact">Book a Free Demo Class <span>↗</span></a>
+</div>
+<button class="menu" id="menuBtn" aria-label="Open navigation">☰</button>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#courses">Courses</a>
+  <a href="#delivery">Class Formats</a>
+  <a href="#approach">Our Approach</a>
+  <a href="#instructor">Instructor</a>
+  <a href="#faq">FAQs</a>
+  <a href="#contact">Contact & Booking</a>
+  <a href="tel:01795683809" style="color:var(--navy);font-weight:900;">📞 Call: 01795683809</a>
+  <a href="https://wa.me/8801795683809" target="_blank" rel="noopener" style="color:#0b756b;font-weight:900;">💬 WhatsApp: 01795683809</a>
+</div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow"><span class="dot"></span> CAMBRIDGE & EDEXCEL · ONLINE & IN-PERSON</div>
+<h1>Understand deeply.<br><em>Achieve boldly.</em></h1>
+<p>Concept-first Physics and Chemistry coaching for Pre-O Level, O Level and A Level students. Join us in Lalmatia or learn online—with the same commitment to teaching quality, clear explanations and structured exam preparation.</p>
+<div class="actions">
+  <a class="btn btn-primary" href="#contact">Book a Free Demo Class <span>↗</span></a>
+  <a class="btn btn-gold" href="https://wa.me/8801795683809" target="_blank" rel="noopener">💬 WhatsApp (01795683809)</a>
+  <a class="btn btn-outline" href="#courses">Explore Courses ↓</a>
+</div>
+<div class="trustline"><span><b class="check">✓</b> Online & in-person classes</span><span><b class="check">✓</b> No compromise on teaching quality</span><span><b class="check">✓</b> Regular practice & mock tests</span></div>
+</div>
+<div class="portrait-area"><div class="portrait-halo"></div><div class="science-doodle">⚛</div><div class="portrait-frame">
+<img src="assets/instructor-portrait.jpg" alt="Ascend Academy instructor portrait">
+</div><div class="floating-card"><span class="stars">✦ ✦ ✦</span><b>Concepts before memorisation</b><small>Learn the why, not just the formula.</small></div></div>
+</div></section>
+<div class="strip"><div class="wrap stripin"><div><small>Exam boards</small><strong>Cambridge International · Pearson Edexcel</strong></div><div class="sep"></div><div><small>Programmes</small><strong>Pre-O Level · O Level · A Level</strong></div><div class="sep"></div><div><small>Hotline / WhatsApp</small><a href="tel:01795683809" style="color:#fff;text-decoration:underline;"><strong>01795683809</strong></a></div><div class="sep"></div><div><small>Location</small><strong>5/7 Block E, Lalmatia</strong></div></div></div>
+<section class="section delivery" id="delivery"><div class="wrap"><div class="section-head"><div class="kicker">Choose how you learn</div><h2>Learn your way.<br>Same commitment to quality.</h2><p>Join Ascend Academy in person in Lalmatia or attend from home through online classes. Both formats are designed around clear explanations, guided practice and meaningful feedback.</p></div>
+<div class="delivery-grid">
+  <article class="delivery-card">
+    <div class="delivery-icon delivery-icon-offline" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="url(#offCardGrad)"/>
+        <!-- Classroom/Campus Structure -->
+        <path d="M8 38H40" stroke="#f6c945" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M12 38V22L24 13L36 22V38" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 38V27H28V38" fill="#f6c945" fill-opacity="0.3" stroke="#f6c945" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="24" cy="20" r="2.8" fill="#f6c945"/>
+        <path d="M16 26V32M32 26V32" stroke="#e1edf5" stroke-width="2" stroke-linecap="round"/>
+        <!-- Floating Location Beacon Pin -->
+        <path d="M34 11C34 8.79 35.79 7 38 7C40.21 7 42 8.79 42 11C42 14 38 18 38 18C38 18 34 14 34 11Z" fill="#0b9a83" stroke="#ffffff" stroke-width="1.2"/>
+        <circle cx="38" cy="11" r="1.5" fill="#ffffff"/>
+        <defs>
+          <linearGradient id="offCardGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#123e68"/>
+            <stop offset="1" stop-color="#071b32"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="kicker">In person</div>
+    <h3>Offline classes in Lalmatia</h3>
+    <p>Learn face-to-face with focused guidance and time to work through challenging questions.</p>
+    <strong>5/7 Block E, Lalmatia, Dhaka</strong>
+  </article>
+
+  <article class="delivery-card online">
+    <div class="delivery-icon delivery-icon-online" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="14" fill="url(#onCardGrad)"/>
+        <!-- Laptop/Screen Live Interface -->
+        <rect x="11" y="13" width="26" height="18" rx="3" stroke="#ffffff" stroke-width="2.2"/>
+        <path d="M7 35H41C41 35 39 31 37 31H11C9 31 7 35 7 35Z" fill="#00b4d8" fill-opacity="0.35" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+        <!-- Live Video Play / Science Atom Accent -->
+        <circle cx="24" cy="22" r="4.2" fill="#f6c945"/>
+        <path d="M22.5 20.2L27 22L22.5 23.8V20.2Z" fill="#071b32"/>
+        <!-- Broadcast Signal Waves -->
+        <path d="M14 8C17 5.8 20.3 5 24 5C27.7 5 31 5.8 34 8" stroke="#00d4ff" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M17.5 10.5C19.5 9 21.7 8.2 24 8.2C26.3 8.2 28.5 9 30.5 10.5" stroke="#f6c945" stroke-width="1.8" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="onCardGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#023e8a"/>
+            <stop offset="1" stop-color="#04203d"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="kicker">From wherever you are</div>
+    <h3>Online classes available</h3>
+    <p>Get quality teaching and structured support remotely. <strong>There is no compromise on teaching quality in our online classes.</strong></p>
+    <strong>Learn from home, with confidence.</strong>
+  </article>
+</div></div></section>
+<section class="section" id="courses"><div class="wrap"><div class="section-head"><div class="kicker">Find your programme</div><h2>Build a stronger foundation.<br>Prepare with purpose.</h2><p>Choose the programme that fits your level. Course availability, schedule and syllabus coverage are confirmed during enrolment.</p></div>
+<div class="courses">
+<article class="course">
+  <div class="course-icon course-icon-pre" aria-hidden="true">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="14" fill="url(#preGrad)"/>
+      <circle cx="24" cy="24" r="15" stroke="#ffffff" stroke-opacity="0.2" stroke-dasharray="3 3"/>
+      <path d="M24 7V13M24 35V41M7 24H13M35 24H41" stroke="#f6c945" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M24 13L28.5 21L36.5 24L28.5 27L24 35L19.5 27L11.5 24L19.5 21Z" fill="url(#sparkGrad)" stroke="#ffffff" stroke-width="1.2"/>
+      <circle cx="24" cy="24" r="2.8" fill="#ffffff"/>
+      <defs>
+        <linearGradient id="preGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#1b4666"/>
+          <stop offset="1" stop-color="#071b32"/>
+        </linearGradient>
+        <linearGradient id="sparkGrad" x1="11.5" y1="13" x2="36.5" y2="35" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#f6c945"/>
+          <stop offset="1" stop-color="#f59e0b"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <h3>Pre-O Level</h3>
+  <p>Build essential scientific understanding, mathematical confidence and study habits before moving into the full O Level syllabus.</p>
+  <div class="tags"><span class="tag">Physics foundations</span><span class="tag">Chemistry foundations</span></div>
+  <a class="textlink course-book" href="#contact" data-course="Pre-O Level">Enquire about this course ↗</a>
+</article>
+
+<article class="course">
+  <div class="course-icon course-icon-o" aria-hidden="true">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="14" fill="url(#oGrad)"/>
+      <!-- Atomic Orbitals & Particle Nexus -->
+      <ellipse cx="24" cy="24" rx="15" ry="6.2" transform="rotate(-30 24 24)" stroke="#00d4ff" stroke-width="1.8"/>
+      <ellipse cx="24" cy="24" rx="15" ry="6.2" transform="rotate(30 24 24)" stroke="#f6c945" stroke-width="1.8"/>
+      <ellipse cx="24" cy="24" rx="6.2" ry="15" stroke="#ffffff" stroke-opacity="0.45" stroke-width="1.5"/>
+      <!-- Glowing Core -->
+      <circle cx="24" cy="24" r="4.5" fill="url(#nucleoGrad)"/>
+      <circle cx="24" cy="24" r="2" fill="#ffffff"/>
+      <circle cx="35" cy="18" r="2.2" fill="#00d4ff"/>
+      <circle cx="13" cy="18" r="2.2" fill="#f6c945"/>
+      <defs>
+        <linearGradient id="oGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#092b4c"/>
+          <stop offset="1" stop-color="#031526"/>
+        </linearGradient>
+        <radialGradient id="nucleoGrad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(24 24) scale(4.5)">
+          <stop stop-color="#f6c945"/>
+          <stop offset="1" stop-color="#d97706"/>
+        </radialGradient>
+      </defs>
+    </svg>
+  </div>
+  <h3>O Level</h3>
+  <p>Develop topic mastery, practise structured questions and strengthen exam technique with guided revision and mock assessments.</p>
+  <div class="tags"><span class="tag">Physics</span><span class="tag">Chemistry</span><span class="tag">Exam practice</span></div>
+  <a class="textlink course-book" href="#contact" data-course="O Level">Enquire about this course ↗</a>
+</article>
+
+<article class="course">
+  <div class="course-icon course-icon-a" aria-hidden="true">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="14" fill="url(#aGrad)"/>
+      <!-- Advanced Apex Prism & Mastery Diamond -->
+      <path d="M24 9L38 35H10L24 9Z" stroke="url(#prismGrad)" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M24 9V35" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="2 2"/>
+      <path d="M24 17L29.5 25L24 33L18.5 25L24 17Z" fill="#f6c945" stroke="#ffffff" stroke-width="1.2"/>
+      <circle cx="24" cy="25" r="2.2" fill="#071b32"/>
+      <circle cx="24" cy="9" r="3" fill="#f6c945" stroke="#ffffff" stroke-width="1.5"/>
+      <path d="M14 27L24 25L34 27" stroke="#00d4ff" stroke-width="1.8" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="aGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#1e1848"/>
+          <stop offset="1" stop-color="#071b32"/>
+        </linearGradient>
+        <linearGradient id="prismGrad" x1="10" y1="9" x2="38" y2="35" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#f6c945"/>
+          <stop offset="0.5" stop-color="#ffffff"/>
+          <stop offset="1" stop-color="#00d4ff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <h3>A Level</h3>
+  <p>Work through advanced concepts, calculations and application-based questions with a focus on reasoning and exam readiness.</p>
+  <div class="tags"><span class="tag">Physics</span><span class="tag">Chemistry</span><span class="tag">Advanced practice</span></div>
+  <a class="textlink course-book" href="#contact" data-course="A Level">Enquire about this course ↗</a>
+</article>
+</div></div></section>
+<section class="section approach" id="approach"><div class="wrap approach-grid">
+<div class="quote-card"><div class="qmark">“</div><h3>Small steps build strong understanding. Strong understanding builds confidence.</h3><p>Our approach combines clear teaching, active problem-solving and regular feedback—so students know what they understand and what to work on next.</p><a class="btn btn-gold" href="#contact">Talk About Your Goals ↗</a></div>
+<div><div class="kicker">The Ascend approach</div><h2>Learning that goes beyond the textbook.</h2><p style="color:var(--muted);font-size:14px;margin-bottom:30px">A supportive, structured learning experience built around the student—not just the syllabus.</p>
+<div class="features">
+  <div class="feature">
+    <div class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="13" fill="url(#featGrad1)"/>
+        <path d="M20 9C15.58 9 12 12.58 12 17C12 19.8 13.44 22.25 15.6 23.68V26C15.6 26.55 16.05 27 16.6 27H23.4C23.95 27 24.4 26.55 24.4 26V23.68C26.56 22.25 28 19.8 28 17C28 12.58 24.42 9 20 9Z" fill="#f6c945" stroke="#ffffff" stroke-width="1.4"/>
+        <path d="M17 29.5H23M18.5 32H21.5" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M20 13V17M17 15H23" stroke="#071b32" stroke-width="1.2" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="featGrad1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0b756b"/>
+            <stop offset="1" stop-color="#043833"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div><h3>Clear explanations</h3><p>Break difficult ideas into manageable, logical steps.</p></div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="13" fill="url(#featGrad2)"/>
+        <circle cx="20" cy="14" r="4" fill="#f6c945" stroke="#ffffff" stroke-width="1.3"/>
+        <path d="M13 29C13 24.5 16.1 22 20 22C23.9 22 27 24.5 27 29" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="10" cy="18" r="2.6" fill="#bfe8e3"/>
+        <circle cx="30" cy="18" r="2.6" fill="#bfe8e3"/>
+        <path d="M6 30C6 27 8 25 10 25M34 30C34 27 32 25 30 25" stroke="#bfe8e3" stroke-width="1.3" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="featGrad2" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#123e68"/>
+            <stop offset="1" stop-color="#071b32"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div><h3>Small batches</h3><p>Focused attention and room to ask questions.</p></div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="13" fill="url(#featGrad3)"/>
+        <rect x="11" y="9" width="18" height="23" rx="3" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="1.5"/>
+        <path d="M15 15H25M15 19H21" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="26" cy="26" r="6" fill="#f6c945" stroke="#071b32" stroke-width="1.2"/>
+        <path d="M23.5 26L25.2 27.8L28.8 24.2" stroke="#071b32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="featGrad3" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#023e8a"/>
+            <stop offset="1" stop-color="#031b33"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div><h3>Regular assessments</h3><p>Practice tests and mock exams to identify gaps.</p></div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="13" fill="url(#featGrad4)"/>
+        <path d="M9 30H31" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M12 28V24M18 28V19M24 28V14M30 28V9" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M11 25L18 17L24 19L31 9" stroke="#f6c945" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M27 9H31V13" stroke="#f6c945" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="31" cy="9" r="1.5" fill="#ffffff"/>
+        <defs>
+          <linearGradient id="featGrad4" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#1f2937"/>
+            <stop offset="1" stop-color="#092b4c"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div><h3>Progress feedback</h3><p>Actionable guidance on strengths and next steps.</p></div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="13" fill="url(#featGrad5)"/>
+        <rect x="9" y="10" width="16" height="21" rx="2.5" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.4"/>
+        <path d="M13 16H21M13 20H19M13 24H17" stroke="#ffffff" stroke-opacity="0.6" stroke-width="1.3" stroke-linecap="round"/>
+        <path d="M22 28L31 13L34 16L25 31L21 32L22 28Z" fill="#f6c945" stroke="#ffffff" stroke-width="1.3" stroke-linejoin="round"/>
+        <path d="M29 16L32 19" stroke="#071b32" stroke-width="1.2"/>
+        <defs>
+          <linearGradient id="featGrad5" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#854d0e"/>
+            <stop offset="1" stop-color="#451a03"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div><h3>Guided practice</h3><p>Apply concepts to exam-style questions.</p></div>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="13" fill="url(#featGrad6)"/>
+        <!-- Academic Support Shield & Guidance Star -->
+        <path d="M20 8L30 12V21C30 27 25.5 31.5 20 33C14.5 31.5 10 27 10 21V12L20 8Z" fill="#1b4666" fill-opacity="0.4" stroke="#ffffff" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M20 13L21.8 17.5L26.5 18L23 21.2L24 26L20 23.5L16 26L17 21.2L13.5 18L18.2 17.5L20 13Z" fill="#f6c945" stroke="#ffffff" stroke-width="1"/>
+        <circle cx="20" cy="20" r="1.5" fill="#071b32"/>
+        <defs>
+          <linearGradient id="featGrad6" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#123e68"/>
+            <stop offset="1" stop-color="#071b32"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div><h3>Individual support</h3><p>Ask doubts and reinforce challenging topics.</p></div>
+  </div>
+</div></div></div></section>
+<section class="section" id="instructor"><div class="wrap teacher-grid"><div class="teacher-photo">
+<img src="assets/instructor-portrait.jpg" alt="Syed Muntazir Mehdi">
+</div><div class="teacher-copy"><div class="kicker">Meet your instructor</div><h2>Learn with clarity.<br>Grow with confidence.</h2><p><strong>Syed Muntazir Mehdi</strong> is a Computer Science graduate from BRAC University with over five years of teaching experience. He has experience teaching both teenagers and adults, adapting explanations and learning activities to suit different needs and learning styles.</p><p>His concept-first approach to Physics and Chemistry focuses on making challenging topics easier to understand, building confidence through guided problem-solving, and helping students apply their knowledge to exam-style questions.</p><div class="teacher-pills"><span>Physics & Chemistry</span><span>Cambridge & Edexcel</span><span>Concept-led teaching</span><span>Exam preparation</span></div><div style="display:flex;gap:12px;flex-wrap:wrap;"><a class="btn btn-primary" href="#contact">Ask About Classes ↗</a><a class="btn btn-outline" href="tel:01795683809">📞 Call 01795683809</a></div></div></div></section>
+<section class="cta"><div class="wrap"><div class="cta-panel"><div><div class="kicker" style="color:var(--gold)">Your next step starts here</div><h2>Ready to make science click?</h2><p>Call or message <strong>01795683809</strong>, or fill out the booking form below.</p></div><div style="display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:1;"><a class="btn btn-gold" href="#contact">Enquire About Enrolment ↗</a><a class="btn btn-outline" href="https://wa.me/8801795683809" target="_blank" rel="noopener" style="color:#fff;border-color:rgba(255,255,255,0.35);">💬 WhatsApp Us</a></div></div></div></section>
+<section class="section" id="faq"><div class="wrap faq-grid"><div><div class="kicker">Good to know</div><h2>Questions, answered.</h2><p style="color:var(--muted-dark);font-size:16px;font-weight:550;">Need something else? Call or message <strong>01795683809</strong> or send an enquiry below.</p><a class="textlink" href="#contact">Ask a question ↗</a></div><div class="faq-list">
+<details><summary>Which exam boards do you cover?</summary><p>Ascend Academy is designed for Cambridge International and Pearson Edexcel students. Please mention your exact syllabus or specification when enquiring so coverage can be confirmed.</p></details>
+<details><summary>Which levels and subjects are available?</summary><p>The planned programmes cover Pre-O Level, O Level and A Level Physics and Chemistry. Availability may vary by batch and schedule.</p></details>
+<details><summary>Are both online and offline classes available?</summary><p>Yes. Offline classes are held at 5/7 Block E, Lalmatia, Dhaka, and online classes are also available. The same commitment to teaching quality applies to both formats, with no compromise on quality for online students.</p></details>
+<details><summary>Can I book a trial class?</summary><p>You can submit an enquiry below or call 01795683809 to request a trial class or consultation. Your booking is not confirmed until availability is checked and you receive a confirmation.</p></details>
+<details><summary>Are results guaranteed?</summary><p>No academy can honestly guarantee a particular exam grade. Ascend focuses on clear teaching, structured practice, regular assessment and feedback to help students make progress.</p></details>
+</div></div></section>
+<section class="section contact" id="contact"><div class="wrap contact-grid"><div><div class="kicker">Start a conversation</div><h2>Let’s find the right class for you.</h2><p style="color:var(--muted-dark);font-size:16px;font-weight:550;">Share a few details and we’ll follow up about course options, timings and enrolment.</p><div class="contact-items">
+<a class="contact-item" href="tel:01795683809" style="text-decoration:none;"><div class="ci">📞</div><div><b>Call Direct</b><small style="color:var(--navy);font-weight:800;font-size:14px;">01795683809</small></div></a>
+<a class="contact-item" href="https://wa.me/8801795683809" target="_blank" rel="noopener" style="text-decoration:none;"><div class="ci">💬</div><div><b>WhatsApp Message</b><small style="color:var(--navy);font-weight:800;font-size:14px;">01795683809 (Click to chat)</small></div></a>
+<div class="contact-item">
+  <div class="ci ci-offline">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="14" fill="#123e68"/>
+      <path d="M10 36H38" stroke="#f6c945" stroke-width="2" stroke-linecap="round"/>
+      <path d="M14 36V22L24 14L34 22V36" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M20 36V27H28V36" fill="#f6c945" fill-opacity="0.35" stroke="#f6c945" stroke-width="1.8"/>
+      <circle cx="24" cy="20" r="2.2" fill="#f6c945"/>
+    </svg>
+  </div>
+  <div><b>Offline classes</b><small>5/7 Block E, Lalmatia, Dhaka</small></div>
+</div>
+<div class="contact-item">
+  <div class="ci ci-online">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="14" fill="#023e8a"/>
+      <rect x="12" y="14" width="24" height="16" rx="3" stroke="#ffffff" stroke-width="2"/>
+      <path d="M9 34H39C39 34 37 30 35 30H13C11 30 9 34 9 34Z" fill="#00b4d8" fill-opacity="0.4" stroke="#ffffff" stroke-width="1.8"/>
+      <circle cx="24" cy="22" r="3.5" fill="#f6c945"/>
+      <path d="M17 9C19 7.5 21.4 6.8 24 6.8C26.6 6.8 29 7.5 31 9" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div><b>Online classes</b><small>Available with the same commitment to quality</small></div>
+</div>
+<div class="contact-item"><div class="ci">◷</div><div><b>Schedule</b><small>Ask us about current available slots</small></div></div>
+</div></div>
+<form class="form-card" id="enquiryForm">
+  <h3>Book a Free Demo Class</h3>
+  <p>Fill out the details below to reserve your free demo class. We will confirm your slot right away.</p>
+  <div class="form-grid">
+    <div class="field"><label for="name">Parent / student name *</label><input id="name" name="name" required placeholder="Your full name"></div>
+    <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" required type="tel" placeholder="01XXXXXXXXX"></div>
+    <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="name@example.com"></div>
+    <div class="field"><label for="level">Academic level *</label><select id="level" name="level" required><option value="">Select level</option><option>Pre-O Level</option><option>O Level</option><option>A Level</option></select></div>
+    <div class="field"><label for="subject">Subject *</label><select id="subject" name="subject" required><option value="">Select subject</option><option>Physics</option><option>Chemistry</option><option>Physics and Chemistry</option></select></div>
+    <div class="field"><label for="board">Exam board</label><select id="board" name="board"><option>Cambridge</option><option>Edexcel</option><option>Not sure yet</option></select></div>
+    <div class="field full"><label for="format">Class format</label><select id="format" name="format"><option>In-person at Lalmatia</option><option>Online</option><option>Discuss options</option></select></div>
+    <div class="field full"><label for="message">Anything we should know?</label><textarea id="message" name="message" rows="3" placeholder="Current syllabus, goals, preferred timing..."></textarea></div>
+  </div>
+  <button class="btn btn-primary" id="submitBtn" type="submit" style="width:100%;margin-top:15px;font-size:16px;padding:16px;">Book a Free Demo Class ↗</button>
+  <div class="notice">Need immediate assistance? Call or WhatsApp us at <strong><a href="tel:01795683809" style="color:inherit;text-decoration:underline;">01795683809</a></strong>.</div>
+  <div id="formStatus" role="status" style="font-size:14px;margin-top:14px;padding:12px;border-radius:10px;display:none;line-height:1.5;"></div>
+</form>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="#home"><span class="brandmark" aria-hidden="true"><svg viewBox="0 0 48 48" role="img"><path d="M7 36.5 21.4 9.5c.8-1.5 2.8-1.5 3.6 0l14 27" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.4 29.5h17.2M24 29.5l7.3-8.2" fill="none" stroke="#F4C95D" stroke-width="3.4" stroke-linecap="round"/><circle cx="36.7" cy="15" r="3" fill="#F4C95D"/></svg></span><span>ASCEND<small style="color:#9fb5c7">ACADEMY</small></span></a><p>Concept-first Physics and Chemistry coaching for Cambridge and Edexcel learners, online and in Lalmatia. Rise through knowledge.<br><br><strong>Hotline / WhatsApp:</strong> <a href="tel:01795683809" style="color:#fff;text-decoration:underline;">01795683809</a><br><strong>Email:</strong> <a href="mailto:muntazir18mehdi@gmail.com" style="color:#fff;text-decoration:underline;">muntazir18mehdi@gmail.com</a></p></div><div class="footer-links"><a href="#courses">Courses</a><a href="#delivery">Class formats</a><a href="#approach">Our approach</a><a href="#instructor">Instructor</a><a href="#faq">FAQs</a><a href="#contact">Enquiries</a><a href="tel:01795683809">Call 01795683809</a></div></div><div class="copyright"><span>© <span id="year"></span> Ascend Academy. All rights reserved.</span><span>Made for learning, built for growth.</span></div></div></footer>
+<!-- Floating WhatsApp / Quick Contact Action -->
+<a href="https://wa.me/8801795683809" target="_blank" rel="noopener" style="position:fixed;bottom:24px;right:24px;z-index:99;background:#25D366;color:#fff;display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;box-shadow:0 12px 35px rgba(0,0,0,0.22);text-decoration:none;font-weight:850;font-size:14.5px;transition:transform .2s;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+  <span>💬</span> WhatsApp (01795683809)
+</a>
+<div class="modal" id="bookingModal" aria-hidden="true"><div class="modal-box"><button class="modal-close" id="closeModal" aria-label="Close">×</button><div class="kicker">Free Demo Class</div><h2 style="font-size:30px;margin:8px 0">Take the next step.</h2><p style="color:var(--muted);font-size:13px">Use the form to book your free demo class.</p><a class="btn btn-primary" href="#contact" id="modalGo">Go to booking form ↗</a></div></div>
+<script>
+const GOOGLE_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwAS20sTO1wCmmKTtrRPMh_ELO3-3Ubc-O__4hkLuFHNvnzX148b-6-MDxD1YYkLgwP/exec";
+
+const menuBtn=document.getElementById('menuBtn'), mobileNav=document.getElementById('mobileNav');
+menuBtn.addEventListener('click',()=>{mobileNav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',mobileNav.classList.contains('open'))});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileNav.classList.remove('open')));
+document.querySelectorAll('.course-book').forEach(a=>a.addEventListener('click',()=>{const s=document.getElementById('level');s.value=a.dataset.course; if(a.dataset.course==='Pre-O Level') s.value='Pre-O Level';}));
+document.querySelectorAll('a[href="#contact"]').forEach(a=>a.addEventListener('click',()=>{if(mobileNav)mobileNav.classList.remove('open')}));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById('enquiryForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  const submitBtn = document.getElementById('submitBtn');
+  const statusDiv = document.getElementById('formStatus');
+  const f = new FormData(form);
+
+  const payload = {
+    name: f.get('name') || '',
+    phone: f.get('phone') || '',
+    email: f.get('email') || '',
+    level: f.get('level') || '',
+    subject: f.get('subject') || '',
+    board: f.get('board') || '',
+    format: f.get('format') || '',
+    message: f.get('message') || ''
+  };
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Submitting your demo request...';
+  statusDiv.style.display = 'block';
+  statusDiv.style.background = '#e8f3fa';
+  statusDiv.style.color = '#092b4c';
+  statusDiv.style.border = '1px solid #cce0ee';
+  statusDiv.innerHTML = '⏳ Saving your demo class request...';
+
+  const waMsg = `Hello Ascend Academy, I would like to book a free demo class.%0AName: ${encodeURIComponent(payload.name)}%0APhone: ${encodeURIComponent(payload.phone)}%0AEmail: ${encodeURIComponent(payload.email || 'Not provided')}%0ALevel: ${encodeURIComponent(payload.level)}%0ASubject: ${encodeURIComponent(payload.subject)}%0AExam board: ${encodeURIComponent(payload.board)}%0AFormat: ${encodeURIComponent(payload.format)}%0AAdditional details: ${encodeURIComponent(payload.message || 'Not provided')}`;
+  const waUrl = 'https://wa.me/8801795683809?text=' + waMsg;
+
+  try {
+    if (GOOGLE_SCRIPT_WEB_APP_URL && GOOGLE_SCRIPT_WEB_APP_URL.startsWith('http')) {
+      await fetch(GOOGLE_SCRIPT_WEB_APP_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify(payload)
+      });
+    }
+
+    statusDiv.style.background = '#e8f7f0';
+    statusDiv.style.color = '#076b43';
+    statusDiv.style.border = '1px solid #b7e8d0';
+    statusDiv.innerHTML = `<strong>✅ Free Demo Class Request Submitted!</strong><br>Your details have been saved and Syed Muntazir Mehdi has been notified.<br><br>
+    <a href="${waUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#075e54;color:#fff;padding:8px 16px;border-radius:999px;font-weight:bold;text-decoration:none;font-size:12px;margin-top:5px;">💬 Open in WhatsApp as well ↗</a>`;
+
+    form.reset();
+  } catch (err) {
+    console.error('Submission error:', err);
+    statusDiv.style.background = '#fef2f2';
+    statusDiv.style.color = '#991b1b';
+    statusDiv.style.border = '1px solid #fecaca';
+    statusDiv.innerHTML = `⚠️ An error occurred while saving online. You can send your booking directly via WhatsApp:<br><br>
+    <a href="${waUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#075e54;color:#fff;padding:8px 16px;border-radius:999px;font-weight:bold;text-decoration:none;font-size:12px;margin-top:5px;">💬 Send via WhatsApp ↗</a>`;
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Book a Free Demo Class ↗';
+  }
+});
+
+// Subtle entrance animations: content remains visible if reduced motion or observer is unavailable.
+document.addEventListener('DOMContentLoaded',()=>{
+ const nodes=document.querySelectorAll('.hero-copy,.portrait-area,.stripin,.section-head,.course,.delivery-card,.quote-card,.feature,.teacher-photo,.teacher-copy,.cta-panel,.faq-grid>div,.contact-grid>div');
+ nodes.forEach((el,i)=>{el.classList.add('reveal'); if(i%4===1)el.classList.add('reveal-delay-1'); else if(i%4===2)el.classList.add('reveal-delay-2'); else if(i%4===3)el.classList.add('reveal-delay-3');});
+ if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');io.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -35px 0px'});nodes.forEach(el=>io.observe(el));}else{nodes.forEach(el=>el.classList.add('is-visible'));}
+});
+
+</script>
+</body></html>
